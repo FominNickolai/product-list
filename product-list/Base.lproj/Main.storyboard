@@ -133,7 +133,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes Logo Graphic T-Shirt" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mB8-Wd-PTM">
-                                                    <rect key="frame" x="0.0" y="187" width="178" height="44"/>
+                                                    <rect key="frame" x="5" y="187" width="168" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="Fjg-G8-u4r"/>
                                                     </constraints>
@@ -142,7 +142,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0D-d0-SkP">
-                                                    <rect key="frame" x="0.0" y="234" width="178" height="31"/>
+                                                    <rect key="frame" x="5" y="234" width="168" height="31"/>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                                     <color key="textColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -152,12 +152,12 @@
                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="El8-pA-RFy" firstAttribute="leading" secondItem="fXD-Qd-VvC" secondAttribute="leading" id="0wI-W4-wtg"/>
-                                            <constraint firstAttribute="trailing" secondItem="p0D-d0-SkP" secondAttribute="trailing" id="476-Mh-Q8J"/>
+                                            <constraint firstAttribute="trailing" secondItem="p0D-d0-SkP" secondAttribute="trailing" constant="5" id="476-Mh-Q8J"/>
                                             <constraint firstItem="mB8-Wd-PTM" firstAttribute="top" secondItem="El8-pA-RFy" secondAttribute="bottom" constant="9" id="7aR-nE-FiO"/>
-                                            <constraint firstItem="p0D-d0-SkP" firstAttribute="leading" secondItem="fXD-Qd-VvC" secondAttribute="leading" id="MLU-Si-lUd"/>
+                                            <constraint firstItem="p0D-d0-SkP" firstAttribute="leading" secondItem="fXD-Qd-VvC" secondAttribute="leading" constant="5" id="MLU-Si-lUd"/>
                                             <constraint firstItem="El8-pA-RFy" firstAttribute="top" secondItem="fXD-Qd-VvC" secondAttribute="top" id="N4C-cp-D3r"/>
-                                            <constraint firstItem="mB8-Wd-PTM" firstAttribute="leading" secondItem="fXD-Qd-VvC" secondAttribute="leadingMargin" id="Pe3-D9-BKa"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="mB8-Wd-PTM" secondAttribute="trailing" id="YhB-wp-hYd"/>
+                                            <constraint firstItem="mB8-Wd-PTM" firstAttribute="leading" secondItem="fXD-Qd-VvC" secondAttribute="leadingMargin" constant="5" id="Pe3-D9-BKa"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="mB8-Wd-PTM" secondAttribute="trailing" constant="5" id="YhB-wp-hYd"/>
                                             <constraint firstItem="p0D-d0-SkP" firstAttribute="top" secondItem="mB8-Wd-PTM" secondAttribute="bottom" constant="3" id="pX2-hV-Vt9"/>
                                             <constraint firstAttribute="bottom" secondItem="p0D-d0-SkP" secondAttribute="bottom" constant="5" id="tZO-Ou-apg"/>
                                             <constraint firstAttribute="trailing" secondItem="El8-pA-RFy" secondAttribute="trailing" id="yd5-64-SwH"/>
