@@ -11,9 +11,8 @@ import UIKit
 class CategoriesVC: UIViewController {
     
     //MARK: - IBOutlets
-    @IBOutlet weak var categoryTable: UITableView!
     
-    //MARK: - Properties
+    @IBOutlet weak var categoryTable: UITableView!
 
     //MARK: - Life Cycle
     
@@ -24,6 +23,18 @@ class CategoriesVC: UIViewController {
         
     }
 
+    //MARK: - PrepareForSegue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            
+            assert(sender as? Category != nil)
+            productsVC.initProducts(category: sender as! Category)
+        }
+    }
 }
 
 //MARK: - UITableViewDataSource
@@ -45,5 +56,26 @@ extension CategoriesVC: UITableViewDataSource {
 //MARK: - UITableViewDelegate
 extension CategoriesVC: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+        
+    }
+
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
