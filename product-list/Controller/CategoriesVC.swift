@@ -8,7 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CategoriesVC: UIViewController {
+    
+    //MARK: - IBOutlets
+    @IBOutlet weak var categoryTable: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
